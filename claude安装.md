@@ -110,6 +110,18 @@ npm update -g @anthropic-ai/claude-code
 brew upgrade claude-code
 ```
 
+### 11. 补充扩展插件
+```shell
+# 自动切换不同模型
+npm install -g @musistudio/claude-code-router
+#  监控token消耗
+npm install -g ccusage
+
+# 实时显示部分资源消耗
+/plugin marketplace add jarrodwatts/claude-hud
+/plugin install claude-hud
+```
+
 ### 总结
 1. 执行所有插件相关命令的前提是**先启动Claude Code交互界面**（`npx @z_ai/coding-helper`）；
 2. 配置`setting.json`时需替换真实智谱API Key，前置依赖需在本地终端提前安装；
