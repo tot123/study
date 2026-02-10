@@ -1,0 +1,19 @@
+方式二：
+docker pull --platform linux/amd64 node:lts-alpine3.23
+docker run -it -d -p 18790:18790 -p 18789:18789 \
+-v ~/docker/openclaw:/root/.openclaw \
+--name openclaw \
+node:lts-alpine3.23
+
+
+
+docker exec -it openclaw sh 
+# 将原有的仓库地址替换为阿里云镜像
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+
+apk add --no-cache ca-certificates
+update-ca-certificates
+
+
+apk update
+apk add --no-cache linux-headers git python3 make g++ gcc cmake
