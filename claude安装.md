@@ -126,3 +126,15 @@ npm install -g ccusage
 1. 执行所有插件相关命令的前提是**先启动Claude Code交互界面**（`npx @z_ai/coding-helper`）；
 2. 配置`setting.json`时需替换真实智谱API Key，前置依赖需在本地终端提前安装；
 3. 命令执行环境区分：插件安装命令需在Claude交互界面执行，依赖安装/版本更新在本地终端执行。
+
+
+
+vscode 找到插件配置
+```shell
+{
+"claudeCode.environmentVariables": [
+        { "name": "ANTHROPIC_BASE_URL", "value": "https://xxxx" },
+        { "name": "ANTHROPIC_AUTH_TOKEN", "value": "xxxx" }
+    ],
+}
+```
