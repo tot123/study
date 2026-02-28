@@ -29,6 +29,17 @@ vim ~/.claude/setting.json
 }
 ```
 
+```bash
+# 跳过登录
+vim ~/.claude.json
+```
+配置后面内容跳过登录 "hasCompletedOnboarding": true,
+```json
+{
+  "hasCompletedOnboarding": true
+}
+```
+
 ## 2.2 图形化界面进行配置 配置文件设置（二选一执行）
 ```bash
 # 启动国内版本交互界面（所有插件命令需在此界面执行）
