@@ -14,16 +14,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 文档组织
 
-文档采用数字编号前缀（`00001-`, `00200-`, `00201-` 等）分类：
+文档采用 `00001`-`00029` 连续编号，按时间和功能分组：
 
-- `00001-*`: 基础工具安装和配置
-- `00200-*`: Claude Code 核心功能指南
-- `00201-*`: Claude Code 扩展系统（命令、竞品分析）
-- `00202-*`: MCP 服务器集成
-- `00203-*`: Skills 系统
-- `00204-*`: 第三方模型集成
-- `00205-*`: 智能路由
-- `00206-*`: 最佳实践
+- `00001`: Claude 安装
+- `00002-00004`: Docker（Ollama、OpenClaw）
+- `00005-00006`: 自动化工具（n8n）
+- `00007-00020`: Claude Code 系列（指南、入门、原理、命令、MCP、Skills、模型、路由、最佳实践、RTK）
+- `00021-00022`: 数据库（PostgreSQL 15/18）
+- `00023-00024`: 系统运维（多用户、noVNC）
+- `00025-00026`: AI 工具（智能导航、RTK）
+- `00027-00029`: 大数据（Hadoop、Kafka+Spark、k8s）
 
 ## 文档维护原则
 
@@ -84,8 +84,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 [编号]-[主题]-[子主题].md
 
 示例:
-00207-claudecode-插件开发.md
-00208-ai工具-本地部署.md
+00030-新主题-子主题.md
 ```
 
 ### 内容来源
